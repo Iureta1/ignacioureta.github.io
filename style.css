@@ -1,0 +1,37 @@
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: beige;
+}
+.skills-table {
+    background-color: rgb(191, 197, 195);
+    color: rgb(16, 13, 13);
+    border-collapse:collapse;
+    width: 100%;
+}
+.skills-table th, .skills-table td {
+    border: 3px solid black;
+    padding: 12px;
+    text-align: left;
+
+
+}
+
+.button {
+    background-color: rgb(255, 212, 127);
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+.button:hover {
+    background-color: bisque;
+}
+.color1 {
+    background-color: rgb(221, 119, 36);
+    padding: 30px;
+}

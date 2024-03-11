@@ -2,15 +2,26 @@
 
 <html>
     <head>
-        <h1> Ignacio Ureta</h1>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>  
+
+    <body>
+        <h1 class="color1"> Ignacio Ureta</h1>
         <h2> Industrial Civil Engineering</h2>
-        <h2> 2020</h2>
+        <h2> Income:</h2>
+        <h2>2020</h2>
+        <h2>Expected outcome:</h2>
+        <div id="changeableSection">
+            <h2> 2026</h2>
+        </div>
         <a href="https://github.com/Iureta1/ignacioureta.github.io.git">iureta_repository
 
         </a>
-        <p>Student of Civil Engineering, twenty-three years old</p>
+        <p>Student of Civil Engineering at Universidad De Los Andes, twenty-three years old</p>
         <h2> SKILLS TABLE</h2>
-        <table>
+        <table class=" skills-table" >
+            <caption>Título de la tabla</caption>
             <tr>
               <th>Skill</th>
               <th>Level</th>
@@ -52,5 +63,17 @@
                 <td>Native</td>
               </tr>
           </table>
-    </head>
+    <div>
+        <input type="text" id="inputText">
+        <button class="button" onclick="changeSection()">Change year of graduation</button>
+    </div>
+    <script>
+        function changeSection() {
+            var inputValue = document.getElementById("inputText").value;
+            document.getElementById("changeableSection").innerHTML = "<h2>" + inputValue + "</h2>";
+        }
+    </script>
+        </body> 
+    
 </html>
+
